@@ -1,0 +1,44 @@
+{
+  "name": "gulp-react-intl-messages",
+  "version": "0.0.1",
+  "description": "Gulp plugin for extracting default messages defined with react-intl's defineMessages API into a single file.",
+  "main": "dist/index.js",
+  "author": "Morgan Ney <morganney@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "gulpplugin",
+    "babel",
+    "plugin",
+    "react",
+    "intl",
+    "define",
+    "messages"
+  ],
+  "engines": {
+    "node": ">=4.8.6"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-react-intl": "^2.3.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.12.1",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "babel-plugin-react-intl": "^2.3.1"
+  },
+  "scripts": {
+    "lint": "eslint index.js test",
+    "prepublish": "rimraf dist",
+    "prepare": "babel index.js -d dist",
+    "test": "mocha --require babel-core/register"
+  }
+}
