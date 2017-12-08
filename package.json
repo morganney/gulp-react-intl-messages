@@ -1,8 +1,9 @@
 {
   "name": "gulp-react-intl-messages",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Gulp plugin for extracting default messages defined with react-intl's defineMessages API into a single file.",
   "main": "dist/index.js",
+  "repository": "morganney/gulp-react-intl-messages",
   "author": "Morgan Ney <morganney@gmail.com>",
   "license": "MIT",
   "private": true,
