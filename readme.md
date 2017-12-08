@@ -16,7 +16,7 @@ const gulp = require('gulp')
 const reactIntlMessages = require('gulp-react-intl-messages')
 
 gulp.src('/path/to/messages/**/*.js').pipe(reactIntlMessages({
-	filename: 'all-react-intl-default-messages.json',
+    filename: 'all-react-intl-default-messages.json',
     // whatever babel options your src'd files need
     babel: { plugins: ['react-intl'] }
 }).pipe(gulp.dest('dist'))
@@ -30,7 +30,7 @@ gulp.src('/path/to/messages/**/*.js').pipe(reactIntlMessages({
 
 `filename` Name of resulting file (extension will be coerced to .json). Defaults to "gulp-react-intl-messages.json".
 
-`babel` See the [Babel options](https://babeljs.io/docs/usage/options/). Defaults to `{ plugins: ['react-intl'] }`
+`babel` See the [Babel options](https://babeljs.io/docs/usage/options/). Defaults to `{ plugins: ['react-intl'] }`.
 
 ## License
 
