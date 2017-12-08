@@ -6,7 +6,6 @@
   "repository": "morganney/gulp-react-intl-messages",
   "author": "Morgan Ney <morganney@gmail.com>",
   "license": "MIT",
-  "private": true,
   "keywords": [
     "gulpplugin",
     "babel",
@@ -38,8 +37,8 @@
   },
   "scripts": {
     "lint": "eslint index.js test",
-    "prepublish": "rimraf dist",
-    "prepare": "babel index.js -d dist",
+    "prepare": "rimraf dist && babel index.js -d dist",
+    "prepublishOnly": "yarn run test",
     "test": "mocha --require babel-core/register"
   }
 }
